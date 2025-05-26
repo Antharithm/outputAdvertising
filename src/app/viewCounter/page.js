@@ -1,29 +1,23 @@
 "use client";
 import { useEffect, useState } from "react";
-import { get, ref, set } from "firebase/database";
-import { database } from "../firebaseConfig";
 
 const ViewCounter = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const counterRef = ref(database, "views");
-    get(counterRef)
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          setCount(snapshot.val());
-          set(counterRef, snapshot.val() + 1);
-        } else {
-          console.log("No data available");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // Load count from localStorage if available
+    const savedCount = localStorage.getItem("viewCount");
+    if (savedCount) {
+      setCount(parseInt(savedCount));
+    }
+    // Increment count
+    const newCount = (parseInt(savedCount) || 0) + 1;
+    setCount(newCount);
+    localStorage.setItem("viewCount", newCount.toString());
   }, []);
 
   return (
-    <span className="text-[#50fd9a]">
+    <span className="text-[#c0c0c0]">
       {count !== undefined ? `${count}` : "(loading...)"}
     </span>
   );

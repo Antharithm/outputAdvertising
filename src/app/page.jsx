@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
@@ -10,7 +10,6 @@ import AchievementsSection from "./components/AchievementsSection";
 import BackToTopButton from "./components/BackToTopButton";
 import MerchCarousel from "./components/MerchCarousel";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { getCounter } from "./services/counter.service";
 
 export default function Home() {
   return (
@@ -26,7 +25,7 @@ export default function Home() {
           <EmailSection />
         </ParallaxProvider>
       </div>
-      <Footer/>
+      <Footer />
       <BackToTopButton />
     </main>
   );

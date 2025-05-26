@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 const googleAnalytics = process.env.GOOGLE_ANALYTICS;
 
 export const metadata = {
-  title: "Expansion Project - Official Band Website",
+  title: "Output Advertising - Official Website",
   description:
-    "Explore the music of Expansion Project, a dynamic fusion band from Philadelphia PA",
+    "Input equals Output. We connect brands to their audience.",
   icon: "/images/greenInfinityLogoV2.webp",
   keywords: [
     "Expansion Project",

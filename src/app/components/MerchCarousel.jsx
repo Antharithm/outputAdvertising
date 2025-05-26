@@ -73,14 +73,14 @@ const MerchCarousel = () => {
   // Merch Window
   return (
     <section id="merch" className="flex flex-col items-center">
-      <h2 className="text-4xl font-bold text-[#50fd9a] mt-12 mb-8 md:mb-12 determination-mono-font">
+      <h2 className="text-4xl font-bold text-[#c0c0c0] mt-12 mb-8 md:mb-12 determination-mono-font">
         Merch
       </h2>
       <h1
         style={{
           fontSize: "16px",
           textAlign: "center",
-          color: "#50fd9a",
+          color: "#c0c0c0",
           fontFamily: "determination-mono-font",
         }}
       >
@@ -103,8 +103,7 @@ const MerchCarousel = () => {
           />
           <div
             className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2"
-            style={{
-            }}
+            style={{}}
           >
             {images[currentImage].caption}
           </div>

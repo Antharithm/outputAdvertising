@@ -42,13 +42,13 @@ const HeroSection = () => {
             <span className=" text-transparent bg-clip-text bg-gradient-to-r to-gray-400 from-gray-300">
               <TypeAnimation
                 sequence={[
-                  "Expansion Project",
+                  "Output Advertising",
                   3000,
-                  "funky",
+                  "Finding",
                   1000,
-                  "jazzy",
+                  "Your",
                   1000,
-                  "groovy",
+                  "Audience.",
                   2000,
                 ]}
                 wrapper="span"
@@ -57,51 +57,16 @@ const HeroSection = () => {
                   fontSize: "1em",
                   fontFamily: "Kallisto Lined",
                   display: "inline-block",
-                  color: "#50fd9a",
+                  color: "#c0c0c0",
                 }}
                 repeat={Infinity}
               />
             </span>
           </h1>
           <div className="text-[#717477] text-base sm:text-lg mb-6 lg:text-xl determination-mono-font">
-            fusion_trio /// philadelphia_pa
+            advertising_agency /// world_wide_web
             <div className="mt-4 flex justify-center sm:justify-start">
-              <a
-                href="https://open.spotify.com/track/73Xm8coj4RVoCfdmI319Vp?si=6ae4afda041b4535"
-                onClick={(e) =>
-                  handleMusicIconClick(
-                    e,
-                    "https://open.spotify.com/track/73Xm8coj4RVoCfdmI319Vp?si=6ae4afda041b4535"
-                  )
-                }
-                className="mx-2 music-icon-button transition-all duration-300 ease-in-out hover:translate-y-[-5px] active:translate-y-[4px] active:scale-95"
-              >
-                <Image
-                  src="/spotify-icon-w2.svg"
-                  alt="Expansion Project on Spotify"
-                  width={40}
-                  height={40}
-                  className="transition-all duration-300 shadow-lg hover:shadow-xl active:shadow-inner"
-                />
-              </a>
-              <a
-                href="https://music.apple.com/us/artist/expansion-project/1353151967"
-                onClick={(e) =>
-                  handleMusicIconClick(
-                    e,
-                    "https://music.apple.com/us/artist/expansion-project/1353151967"
-                  )
-                }
-                className="mx-2 music-icon-button apple-music-icon transition-all duration-300 ease-in-out hover:translate-y-[-5px] active:translate-y-[4px] active:scale-95"
-              >
-                <Image
-                  src="/appleMusic-icon-w2.svg"
-                  alt="Expansion Project on Apple Music"
-                  width={40}
-                  height={40}
-                  className="transition-all duration-300 shadow-lg hover:shadow-xl active:shadow-inner"
-                />
-              </a>
+
             </div>
           </div>
 
@@ -116,7 +81,7 @@ const HeroSection = () => {
 
             {/* <a
               href="/pdfs/Expansion_Project_EPK.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#50fd9a] to-secondary-900 hover:bg-slate-800 text-[#f6f3ed] mt-3 transition duration-500 ease-in-out"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#c0c0c0] to-secondary-900 hover:bg-slate-800 text-[#f6f3ed] mt-3 transition duration-500 ease-in-out"
               download="Expansion Project EPK"
               target="_blank"
             >
@@ -136,12 +101,12 @@ const HeroSection = () => {
             className="rounded-full w-[280px] h-[280px] lg:w-[400px] lg:h-[400px] relative overflow-hidden 
             transition-all duration-700 ease-in-out 
             bg-transparent
-            hover:shadow-[0_0_25px_#50fd9a,0_0_50px_rgba(80,253,154,0.15)] 
+            hover:shadow-[0_0_25px_#c0c0c0,0_0_50px_rgba(192,192,192,0.15)] 
             hover:translate-y-[-10px] 
             cursor-pointer 
             active:translate-y-[4px]
             active:scale-[0.97]
-            active:shadow-[inset_0_0_15px_rgba(80,253,154,0.3)]"
+            active:shadow-[inset_0_0_15px_rgba(192,192,192,0.3)]"
           >
             <div className="absolute inset-0 flex items-center justify-center bg-transparent">
               <Image

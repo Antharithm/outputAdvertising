@@ -34,7 +34,7 @@ const Footer = ({ count }) => {
         <span className="text-muted"></span>
         <p className="mt-1 text-slate-500">
           Visitor count:{" "}
-          <span className="text-[#50fd9a]">{<ViewCounter />}</span>
+          <span className="text-[#c0c0c0]">{<ViewCounter />}</span>
         </p>
         <p className="text-slate-600">All rights reserved.</p>
       </div>

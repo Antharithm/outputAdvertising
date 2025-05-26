@@ -9,14 +9,13 @@ const TAB_DATA = [
   {
     title: "Upcoming",
     id: "upcoming",
-    content: (      
+    content: (
       <ul className="list-disc pl-2 centered-text determination-mono-font">
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>
-          Porch Fest - Philly
-        </li> 
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>
-          The Gem - Spring City, PA 7.25        </li>
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>Porch Fest - Philly</li>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>
+          The Gem - Spring City, PA 7.25{" "}
+        </li>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>
           Into The Pines Music Festival, NJ 8.22
         </li>
       </ul>
@@ -27,9 +26,9 @@ const TAB_DATA = [
     id: "previous",
     content: (
       <ul className="list-disc pl-2 centered-text determination-mono-font">
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>Funktoberfest</li>
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>The Butter Lounge</li>
-        <li style={{ color: "#50fd9a", fontSize: 16 }}>Cosmic Art Studio</li>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>Funktoberfest</li>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>The Butter Lounge</li>
+        <li style={{ color: "#c0c0c0", fontSize: 16 }}>Cosmic Art Studio</li>
       </ul>
     ),
   },
@@ -51,7 +50,7 @@ const AboutSection = () => {
   };
 
   const titleStyle = {
-    color: "#50fd9a",
+    color: "#c0c0c0",
     textAlign: "center",
     fontSize: "3em",
     marginTop: "2em",
@@ -88,27 +87,25 @@ const AboutSection = () => {
         </Parallax>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2
-            className="text-4xl text-center font-bold determination-mono-font mb-4 text-[#50fd9a]"
+            className="text-4xl text-center font-bold determination-mono-font mb-4 text-[#c0c0c0]"
             style={sectionStyle}
           >
-            Expansion Project
+            Output
           </h2>
           <p className="text-base text-center text-[#bababa] lg:text-lg determination-mono-font">
-            Philadelphia based fusion trio Anthony Tilotta on bass, Matthew
-            Silva on piano, and Zamere Williams on drums blend elements of funk,
-            jazz and rock into an innovative sound that&apos;s as expansive as
-            it is deeply rooted in musical tradition. Their sound draws
-            inspiration from many sources, forming a unique sonic identity.
-            Studio recordings have captured their creative essence on tape,
-            while their live shows are events for collaboration that pushes the
-            boundaries of music &infin;
+            We specialize in online advertisement and marketing. We are a team
+            of experts who are passionate about helping businesses grow and
+            succeed online. Our approach is to create a personalized strategy
+            for each client, ensuring that their brand is represented in the
+            best possible way to new and existing audiences. The ads we build
+            for you and audiences we curate will be tailored to your business.
           </p>
 
           <p
-            className="text-center text-4xl font-bold text-[#50fd9a] mt-8 mb-4 determination-mono-font"
+            className="text-center text-4xl font-bold text-[#c0c0c0] mt-8 mb-4 determination-mono-font"
             id="tour"
           >
-            Tour
+            Marketing
           </p>
 
           <div className="flex flex-row justify-center mb-4 tab-buttons-container">

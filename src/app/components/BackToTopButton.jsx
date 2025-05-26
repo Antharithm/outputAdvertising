@@ -35,7 +35,7 @@ const BackToTopButton = () => {
       } z-10`}
       onClick={scrollToTop}
     >
-      <div className="back-to-top-button p-2 rounded-full bg-gradient-to-br from-[#50fd9a] to-[#38d57c] transition-all duration-300 ease-in-out">
+      <div className="back-to-top-button p-2 rounded-full bg-gradient-to-br from-[#c0c0c0] to-[#38d57c] transition-all duration-300 ease-in-out">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-[#121212]"

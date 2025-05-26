@@ -61,7 +61,7 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className=" from-[#50fd9a] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      <div className=" from-[#c0c0c0] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
 
       <div className="z-10">
         <h5 className="text-xl font-bold text-[#f6f3ed] my-2 determination-mono-font flex items-center">
@@ -82,7 +82,9 @@ const EmailSection = () => {
           our inbox is always open. Feel free to get in touch with us about
           bookings, collaborations, or just to have an interesting conversation!
         </p>
-        <div className="socials flex flex-row gap-4 items-center"> {/* Added items-center for vertical alignment */}
+        <div className="socials flex flex-row gap-4 items-center">
+          {" "}
+          {/* Added items-center for vertical alignment */}
           <a
             href="https://www.instagram.com/expansionproject/"
             onClick={(e) =>
@@ -96,7 +98,7 @@ const EmailSection = () => {
             <Image
               src={InstagramIcon}
               alt="Instagram Icon"
-              width={40}  // Reverted from 50 to 40
+              width={40} // Reverted from 50 to 40
               height={40} // Reverted from 50 to 40
             />
           </a>
@@ -113,10 +115,11 @@ const EmailSection = () => {
             <Image
               src={FacebookIcon}
               alt="Facebook Icon"
-              width={44}  // Increased from 40 to 44
+              width={44} // Increased from 40 to 44
               height={44} // Increased from 40 to 44
               style={{
-                filter: 'brightness(0) saturate(100%) invert(83%) sepia(29%) saturate(1080%) hue-rotate(86deg) brightness(104%) contrast(103%)',
+                filter:
+                  "brightness(0) saturate(100%) invert(83%) sepia(29%) saturate(1080%) hue-rotate(86deg) brightness(104%) contrast(103%)",
               }}
             />
           </a>
@@ -131,12 +134,13 @@ const EmailSection = () => {
             <Image
               src={BandcampIcon}
               alt="Bandcamp Icon"
-              width={85}  // Increased from 75 to 85
+              width={85} // Increased from 75 to 85
               height={85} // Increased from 75 to 85
               style={{
-                filter: 'brightness(0) saturate(100%) invert(83%) sepia(29%) saturate(1080%) hue-rotate(86deg) brightness(104%) contrast(103%)',
-                transform: 'scale(2)', // Increased from 1.8 to 2
-                margin: '0 5px',
+                filter:
+                  "brightness(0) saturate(100%) invert(83%) sepia(29%) saturate(1080%) hue-rotate(86deg) brightness(104%) contrast(103%)",
+                transform: "scale(2)", // Increased from 1.8 to 2
+                margin: "0 5px",
               }}
             />
           </a>
@@ -186,21 +190,21 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-[#50fd9a] text-xl rounded-lg block w-full p-4"
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-[#c0c0c0] text-xl rounded-lg block w-full p-4"
               placeholder="Let's talk about..."
             />
           </div>
           <button
             type="submit"
-            className="send-message-button bg-gradient-to-br from-[#38d57c] to-[#50fd9a] text-[#121212] font-bold determination-mono-font py-4 px-5 rounded-lg w-full relative overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 active:translate-y-0"
+            className="send-message-button bg-gradient-to-br from-[#38d57c] to-[#c0c0c0] text-[#121212] font-bold determination-mono-font py-4 px-5 rounded-lg w-full relative overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1 active:translate-y-0"
           >
             <span className="relative z-10 text-lg tracking-wide">
               Send Message
             </span>
           </button>
           {emailSubmitted && (
-            <div className="mt-4 p-4 bg-[#50fd9a] bg-opacity-20 rounded-lg">
-              <p className="text-[#50fd9a] text-lg font-semibold determination-mono-font">
+            <div className="mt-4 p-4 bg-[#c0c0c0] bg-opacity-20 rounded-lg">
+              <p className="text-[#c0c0c0] text-lg font-semibold determination-mono-font">
                 Thank you for contacting Expansion Project!
               </p>
               <p className="text-[#ADB7BE] text-sm mt-2 determination-mono-font">

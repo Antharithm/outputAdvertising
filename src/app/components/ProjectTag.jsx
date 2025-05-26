@@ -5,7 +5,7 @@ import "98.css";
 
 const ProjectTag = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
-    ? "text-[black] border-[#50fd9a] ring-2 ring-[#50fd9a]"
+    ? "text-[black] border-[#c0c0c0] ring-2 ring-[#c0c0c0]"
     : "text-[grey] border-slate-600 hover:bg-slate-200";
   return (
     <button

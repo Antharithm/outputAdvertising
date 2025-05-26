@@ -111,7 +111,7 @@ html {
 }
 
 .contact-button {
-  background-image: linear-gradient(to bottom right, #50fd9a, #38d57c);
+  background-image: linear-gradient(to bottom right, #c0c0c0, #38d57c);
   background-size: 200% 200%;
   background-position: 0% 0%;
   transition: all 0.3s ease-in-out;
@@ -127,7 +127,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom right, #7ffeb7, #50fd9a);
+  background-image: linear-gradient(to bottom right, #7ffeb7, #c0c0c0);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: -1;
@@ -205,7 +205,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom right, #50fd9a, #7ffeb7);
+  background-image: linear-gradient(to bottom right, #c0c0c0, #7ffeb7);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 0;
@@ -239,7 +239,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom right, #7ffeb7, #50fd9a);
+  background-image: linear-gradient(to bottom right, #7ffeb7, #c0c0c0);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: inherit;
@@ -287,7 +287,8 @@ html {
 }
 
 @keyframes gradient-xy {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 0%;
   }
   50% {
@@ -305,11 +306,16 @@ html {
 }
 
 .bg-radial-pulse {
-  background: radial-gradient(circle, rgba(80,253,154,0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(80, 253, 154, 0.2) 0%,
+    transparent 70%
+  );
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.5;
   }

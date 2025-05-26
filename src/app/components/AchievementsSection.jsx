@@ -10,17 +10,17 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 const achievementsList = [
   {
-    metric: "Live Shows",
-    value: "250",
-    postfix: "+",
+    metric: "Impressions",
+    value: "500",
+    postfix: "m",
   },
   {
-    metric: "Tap or scan. Stream new album",
+    metric: "Book a call today.",
   },
   {
-    metric: "Earth Years",
+    metric: "Helping businesses grow",
     value: "8",
-    postfix: "",
+    postfix: "years",
   },
 ];
 
@@ -39,7 +39,7 @@ const AchievementsSection = () => {
           >
             <h2 className="text-[#f6f3ed] text-4xl mb-2 font-bold flex flex-row determination-mono-font">
               {achievement.prefix}
-              {achievement.metric === "Tap or scan. Stream new album" ? (
+              {achievement.metric === "Book a call today." ? (
                 <a href={albumQRLink} target="_blank" rel="noopener noreferrer">
                   <QRCode value={albumQRLink} size={qrCodeSize} />
                 </a>
